@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.dashboard-layout{
+    width: 100%;
+    height: 100vh;
+    margin: 0.7rem 1rem 0.7rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+}
+
+.left-dashboard-layout{
+    width: 15%;
+    height: auto;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 2rem;
+    margin-top: 0.8rem;
+}
+
+.top-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1.5rem;
+}
+
+.menu-youtube-logo-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+    column-gap: 1.5rem;
+}
+
+.menu-container{
+    width: fit-content;
+    height: auto;
+}
+
+.menu-container i{
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.menu-container:hover{
+    background-color: rgb(221, 221, 221);
+    padding: 0.4rem 0.4rem 0.4rem 0.6rem;
+    border-radius: 0.5rem;
+}
+
+.youtube-logo-container{
+    width: 100px;
+    height: auto;
+}
+
+.youtube-logo-container img{
+    width: 100%;
+    height: auto;
+}
+
+.top-second-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.7rem;
+}
+
+.icons-and-description-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+    column-gap: 1.5rem;
+}
+
+.icons-and-description-container:hover{
+    background-color: rgb(221, 221, 221);
+    padding: 0.4rem 0 0.4rem 0.6rem;
+    border-radius: 0.5rem;
+}
+
+.icon-container{
+    width: fit-content;
+    height: auto;
+}
+
+.description-container{
+    width: fit-content;
+    height: auto;
+}
+
+.description-container p{
+    font-size: 0.9rem;
+    color: #1e1e1e
+}
+
+.bottom-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    row-gap: 1.5rem;
+}
+
+.you-icon-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.you-icon-container:hover{
+    background-color: rgb(221, 221, 221);
+    padding: 0.4rem 0 0.4rem 0.6rem;
+    border-radius: 0.5rem;
+}
+
+.you-container{
+    width: fit-content;
+    height: auto;
+    margin-right: 0.5rem;
+}
+
+.you-container p{
+    font-size: 1rem;
+    color: #1e1e1e;
+    font-weight: 600;
+    margin: 0;
+}
+
+.the-icon-container{
+    width: fit-content;
+    height: auto;
+}
+
+.the-icon-container img{
+    width: 100%;
+    height: auto;
+    max-height: 40px;
+    vertical-align: middle;
+}
+
+.second-bottom-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    row-gap: 0.7rem;
+}
+
+.home-icons-and-description-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+    column-gap: 1.5rem;
+    background-color: rgb(240, 240, 240);
+    padding: 0.4rem 0 0.4rem 0.6rem;
+    border-radius: 0.5rem;
+}
+
+.home-icons-and-description-container:hover{
+    background-color: rgb(221, 221, 221);
+}
+
+.home-icon-container{
+    width: fit-content;
+    height: auto;
+}
+
+.home-description-container{
+    width: fit-content;
+    height: auto;
+}
+
+.home-description-container p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #1e1e1e
+}
+
+.right-dashboard-layout{
+    width: 85%;
+    height: 100vh;
+    /* background-color: aqua; */
+    margin: 0.5rem 1rem 0.5rem 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.top-right-dashboard-layout{
+    width: 100%;
+    height: 16vh;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-area-and-microphone-container{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1rem;
+    margin-left: 3rem;
+}
+
+.search-area-and-icon-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+}
+
+.search-area-container{
+    width: fit-content;
+    height: auto;
+}
+
+.search-area-container input{
+    padding: 0.6rem 25rem 0.6rem 0.6rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border: 1px solid rgb(221, 221, 221);
+    outline: none;
+    font-size: 1rem;
+}
+
+.search-icon-container{
+    width: fit-content;
+    height: auto;
+}
+
+.search-icon-container img{
+    border: 1px solid rgb(221, 221, 221);
+    padding: 0.42rem 1rem 0.42rem 1.2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    outline: none;
+    background-color: rgb(248, 248, 248);
+    cursor: pointer;
+}
+
+.microphone-container{
+    width: fit-content;
+    height: auto;
+}
+
+.microphone-container img{
+    background-color: rgb(238, 238, 238);
+    border: 1px rgb(238, 238, 238);
+    border-radius: 5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.top-end-container{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2rem;
+    column-gap: 1.5rem;
+}
+
+.camcorder-container{
+    width: fit-content;
+    height: auto;
+}
+
+.camcorder-container img{
+    cursor: pointer;
+}
+
+.notifications-container{
+    width: fit-content;
+    height: auto;
+}
+
+.notifications-container img{
+    cursor: pointer;
+}
+
+.avatar-container{
+    width: 32px;
+    height: 32px;
+    border-radius: 20rem;
+}
+
+.avatar-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20rem;
+    cursor: pointer;
+}
+
+.content-area-container{
+    width: 100%;
+    height: 100vh;
+    /* background-color: aquamarine; */
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1.5rem;
+}
+
+.top-cards-section{
+    width: 100%;
+    height: 50vh;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    column-gap: 1rem;
+}
+
+.card{
+    width: 32%;
+    height: auto;
+    /* background-color: #f8f8f8; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 0.2rem;
+    border-radius: 0.8rem;
+    /* border: 1px solid #f5f5f5; */
+}
+
+.background-image-container{
+    width: 100%;
+    height: auto;
+    padding: 6rem;
+    /* background-color: #f8f8f8; */
+    background-image: url(./image/Burnaboy.jpg);
+    border-radius: 0.8rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.running-time-container{
+    width: fit-content;
+    height: auto;
+    position: absolute;
+    top: 10rem;
+    right: 0.5rem;
+}
+
+.running-time-container p{
+    color: #f8f8f8;
+    font-size: 0.8rem;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.1rem 0.2rem 0.1rem 0.2rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+.text-group-and-brand-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    padding-top: 1rem;
+}
+
+.right-textgroup-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    column-gap: 1rem;
+}
+
+.brand-logo-container{
+    width: 32px;
+    height: 32px;
+    border-radius: 30rem;
+}
+
+.brand-logo-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30rem;
+    cursor: pointer;
+}
+
+.text-group-container{
+    width: 85%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.35rem;
+}
+
+.header-container{
+    width: 100%;
+    height: auto;
+}
+
+.header-container p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #1e1e1e;
+    cursor: pointer;
+    line-height: 1.5rem;
+}
+
+.brand-name-and-verification-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    column-gap: 0.3rem;
+}
+
+.brand-name-container{
+    width: fit-content;
+    height: auto;
+}
+
+.brand-name-container p{
+    font-size: 0.9rem;
+    color: rgb(94, 94, 94);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.verification-badge-container{
+    width: 16px;
+    height: 16px;
+    /* background-color: rgb(77, 77, 77); */
+    border-radius: 10rem;
+}
+
+.verification-badge-container i{
+    width: 100%;
+    height: 100%;
+    border-radius: 10rem;
+    color: rgb(77, 77, 77);
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.views-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    column-gap: 0.3rem;
+}
+
+.views-number-container{
+    width: fit-content;
+    height: auto;
+}
+
+.views-number-container p{
+    font-size: 0.9rem;
+    color: rgb(94, 94, 94);
+    cursor: pointer;
+}
+
+.dot-container{
+    width: fit-content;
+    height: auto;
+}
+
+.dot-container p{
+    cursor: pointer;
+    font-size: 0.6rem;
+    font-weight: 600;
+}
+
+.time-posted-container{
+    width: fit-content;
+    height: auto;
+}
+
+.time-posted-container p{
+    font-size: 0.9rem;
+    color: rgb(94, 94, 94);
+    cursor: pointer;
+}
+
+.sidebar-container{
+    width: fit-content;
+    height: auto;
+}
+
+.sidebar-container img{
+    color: #1e1e1e;
+    cursor: pointer;
+}
+
+.bottom-cards-section{
+    width: 100%;
+    height: 50vh;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    column-gap: 1rem;
+}
+
+.premier-league-background-image-container{
+    width: 100%;
+    height: auto;
+    padding: 6rem;
+    /* background-color: #f8f8f8; */
+    background-image: url(./image/premierleague.jpg);
+    border-radius: 0.8rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.wwe-background-image-container{
+    width: 100%;
+    height: auto;
+    padding: 6rem;
+    /* background-color: #f8f8f8; */
+    background-image: url(./image/wwe.jpg);
+    border-radius: 0.8rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.tatum-background-image-container{
+    width: 100%;
+    height: auto;
+    padding: 6rem;
+    /* background-color: #f8f8f8; */
+    background-image: url(./image/jaysontatum.jpg);
+    border-radius: 0.8rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.survivor-background-image-container{
+    width: 100%;
+    height: auto;
+    padding: 6rem;
+    /* background-color: #f8f8f8; */
+    background-image: url(./image/survivorseries.jpg);
+    border-radius: 0.8rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.fireboy-background-image-container{
+    width: 100%;
+    height: auto;
+    padding: 6rem;
+    /* background-color: #f8f8f8; */
+    background-image: url(./image/fireboy.jpg);
+    border-radius: 0.8rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
